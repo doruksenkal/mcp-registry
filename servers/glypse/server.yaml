@@ -1,0 +1,25 @@
+name: glypse
+type: remote
+dynamic:
+  tools: true
+meta:
+  category: finance
+  tags:
+    - prediction-markets
+    - analytics
+    - research
+    - remote
+about:
+  title: Glypse
+  description:
+    Glypse's MCP server gives your AI agent a bird’s-eye view of prediction markets. It brings together
+    Glypse's market data, analytics, and research, so your agent can focus on finding opportunities instead of gathering
+    information one source at a time.
+  icon: https://glypse.ai/icon/512
+remote:
+  transport_type: streamable-http
+  url: https://mcp.glypse.ai
+oauth:
+  - provider: glypse
+    secret: glypse.personal_access_token
+    env: GLYPSE_PERSONAL_ACCESS_TOKEN
